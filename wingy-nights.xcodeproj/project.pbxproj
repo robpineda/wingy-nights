@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		226A3E642CF0297F00831618 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A3E632CF0297F00831618 /* main.m */; };
+		226A3F5C2CF029EB00831618 /* SpriteAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A3F542CF029EB00831618 /* SpriteAppDelegate.m */; };
+		226A3F5D2CF029EB00831618 /* ScoresScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A3F592CF029EB00831618 /* ScoresScene.m */; };
+		226A3F5E2CF029EB00831618 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A3F5A2CF029EB00831618 /* MainScene.m */; };
+		226A3F5F2CF029EB00831618 /* SpriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A3F5B2CF029EB00831618 /* SpriteViewController.m */; };
+		226A3F622CF029F400831618 /* WindEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 226A3F612CF029F400831618 /* WindEmitter.sks */; };
+		226A3F662CF03F3B00831618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226A3F652CF03F3B00831618 /* Assets.xcassets */; };
+		226A3F922CF04C9A00831618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226A3F912CF04C9A00831618 /* LaunchScreen.storyboard */; };
+		226A3F992CF05C7C00831618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226A3F982CF05C7C00831618 /* Main.storyboard */; };
+		228924452CF145210031FDB7 /* EnemyOrange.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 228923B82CF145200031FDB7 /* EnemyOrange.atlas */; };
+		228924462CF145210031FDB7 /* EnemyPurple.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 228923B92CF145200031FDB7 /* EnemyPurple.atlas */; };
+		228924472CF145210031FDB7 /* ButtonPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923BB2CF145200031FDB7 /* ButtonPlay.png */; };
+		228924482CF145210031FDB7 /* ButtonHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923BC2CF145200031FDB7 /* ButtonHome.png */; };
+		228924492CF145210031FDB7 /* ButtonPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923BD2CF145200031FDB7 /* ButtonPause.png */; };
+		2289244A2CF145210031FDB7 /* ButtonDeactivated.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923BE2CF145200031FDB7 /* ButtonDeactivated.png */; };
+		2289244B2CF145210031FDB7 /* ButtonArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923BF2CF145200031FDB7 /* ButtonArrowDown.png */; };
+		2289244C2CF145210031FDB7 /* ButtonGameCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923C02CF145200031FDB7 /* ButtonGameCenter.png */; };
+		2289244D2CF145210031FDB7 /* ButtonActivated.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923C12CF145200031FDB7 /* ButtonActivated.png */; };
+		2289244E2CF145210031FDB7 /* ButtonArrowUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923C22CF145200031FDB7 /* ButtonArrowUp.png */; };
+		2289244F2CF145210031FDB7 /* ButtonReplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923C32CF145200031FDB7 /* ButtonReplay.png */; };
+		228924502CF145210031FDB7 /* BackgroundSpeedLines.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923C52CF145200031FDB7 /* BackgroundSpeedLines.png */; };
+		228924512CF145210031FDB7 /* LaunchImageDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923C72CF145200031FDB7 /* LaunchImageDefault@2x.png */; };
+		228924522CF145210031FDB7 /* LaunchImageDefault-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923C82CF145200031FDB7 /* LaunchImageDefault-Landscape@2x.png */; };
+		228924532CF145210031FDB7 /* LaunchImageDefault-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923C92CF145200031FDB7 /* LaunchImageDefault-Landscape.png */; };
+		228924542CF145210031FDB7 /* LaunchImageDefault-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 228923CA2CF145200031FDB7 /* LaunchImageDefault-568h@2x.png */; };
+		228924552CF145210031FDB7 /* EnemyCounter.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 228923CB2CF145210031FDB7 /* EnemyCounter.atlas */; };
+		2289248D2CF145210031FDB7 /* SoundEndHighZero.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2289240B2CF145210031FDB7 /* SoundEndHighZero.m4a */; };
+		2289248E2CF145210031FDB7 /* SoundEndHighFour.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2289240C2CF145210031FDB7 /* SoundEndHighFour.m4a */; };
+		2289248F2CF145210031FDB7 /* SoundEndHighTwo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2289240D2CF145210031FDB7 /* SoundEndHighTwo.m4a */; };
+		228924902CF145210031FDB7 /* SoundEndHighThree.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2289240E2CF145210031FDB7 /* SoundEndHighThree.m4a */; };
+		228924912CF145210031FDB7 /* SoundEndHighOne.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2289240F2CF145210031FDB7 /* SoundEndHighOne.m4a */; };
+		228924922CF145210031FDB7 /* SoundTeleportOne.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 228924112CF145210031FDB7 /* SoundTeleportOne.m4a */; };
+		228924932CF145210031FDB7 /* SoundTeleportZero.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 228924122CF145210031FDB7 /* SoundTeleportZero.m4a */; };
+		228924942CF145210031FDB7 /* SoundTeleportFour.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 228924132CF145210031FDB7 /* SoundTeleportFour.m4a */; };
+		228924952CF145210031FDB7 /* SoundTeleportTwo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 228924142CF145210031FDB7 /* SoundTeleportTwo.m4a */; };
+		228924962CF145210031FDB7 /* SoundTeleportThree.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 228924152CF145210031FDB7 /* SoundTeleportThree.m4a */; };
+		228924972CF145210031FDB7 /* SoundBeginLowOne.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 228924172CF145210031FDB7 /* SoundBeginLowOne.m4a */; };
+		228924982CF145210031FDB7 /* SoundBeginLowThree.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 228924182CF145210031FDB7 /* SoundBeginLowThree.m4a */; };
+		228924992CF145210031FDB7 /* SoundBeginLowTwo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 228924192CF145210031FDB7 /* SoundBeginLowTwo.m4a */; };
+		2289249A2CF145210031FDB7 /* SoundBeginLowFour.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2289241A2CF145210031FDB7 /* SoundBeginLowFour.m4a */; };
+		2289249B2CF145210031FDB7 /* SoundBeginLowZero.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2289241B2CF145210031FDB7 /* SoundBeginLowZero.m4a */; };
+		2289249C2CF145210031FDB7 /* SoundCollision.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2289241D2CF145210031FDB7 /* SoundCollision.m4a */; };
+		2289249D2CF145210031FDB7 /* BackgroundStarsOneiPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2289241F2CF145210031FDB7 /* BackgroundStarsOneiPhone5.png */; };
+		2289249E2CF145210031FDB7 /* BackgroundStarsThreeiPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924202CF145210031FDB7 /* BackgroundStarsThreeiPhone5.png */; };
+		2289249F2CF145210031FDB7 /* BackgroundStarsTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924212CF145210031FDB7 /* BackgroundStarsTwo.png */; };
+		228924A02CF145210031FDB7 /* BackgroundStarsOne.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924222CF145210031FDB7 /* BackgroundStarsOne.png */; };
+		228924A12CF145210031FDB7 /* BackgroundStarsThree.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924232CF145210031FDB7 /* BackgroundStarsThree.png */; };
+		228924A22CF145210031FDB7 /* BackgroundStarsTwoiPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924242CF145210031FDB7 /* BackgroundStarsTwoiPhone5.png */; };
+		228924A42CF145210031FDB7 /* wingynightsicon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924282CF145210031FDB7 /* wingynightsicon1024.png */; };
+		228924A52CF145210031FDB7 /* wingynightsicon29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924292CF145210031FDB7 /* wingynightsicon29pt.png */; };
+		228924A62CF145210031FDB7 /* wingynightsicon60pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2289242A2CF145210031FDB7 /* wingynightsicon60pt.png */; };
+		228924A72CF145210031FDB7 /* wingynightsicon40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2289242B2CF145210031FDB7 /* wingynightsicon40pt.png */; };
+		228924A82CF145210031FDB7 /* wingynightsiconiPad29pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2289242D2CF145210031FDB7 /* wingynightsiconiPad29pt@2x.png */; };
+		228924A92CF145210031FDB7 /* wingynightsiconiPad29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2289242E2CF145210031FDB7 /* wingynightsiconiPad29pt.png */; };
+		228924AA2CF145210031FDB7 /* wingynightsiconiPad76pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2289242F2CF145210031FDB7 /* wingynightsiconiPad76pt@2x.png */; };
+		228924AB2CF145210031FDB7 /* wingynightsiconiPad76pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924302CF145210031FDB7 /* wingynightsiconiPad76pt.png */; };
+		228924AC2CF145210031FDB7 /* wingynightsiconiPad40pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924312CF145210031FDB7 /* wingynightsiconiPad40pt@2x.png */; };
+		228924AD2CF145210031FDB7 /* wingynightsiconiPad40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924322CF145210031FDB7 /* wingynightsiconiPad40pt.png */; };
+		228924AE2CF145210031FDB7 /* ParticleSoundEndHigh.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924342CF145210031FDB7 /* ParticleSoundEndHigh.png */; };
+		228924AF2CF145210031FDB7 /* ParticleSoundBeginLow.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924352CF145210031FDB7 /* ParticleSoundBeginLow.png */; };
+		228924B02CF145210031FDB7 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924362CF145210031FDB7 /* Title.png */; };
+		228924B12CF145210031FDB7 /* EnemyCounterLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924372CF145210031FDB7 /* EnemyCounterLight.png */; };
+		228924B22CF145210031FDB7 /* EnemyCounter.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924382CF145210031FDB7 /* EnemyCounter.png */; };
+		228924B32CF145210031FDB7 /* WindTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924392CF145210031FDB7 /* WindTexture.png */; };
+		228924B42CF145210031FDB7 /* EnemyGreen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2289243A2CF145210031FDB7 /* EnemyGreen.atlas */; };
+		228924B52CF145210031FDB7 /* EnemyBlue.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2289243B2CF145210031FDB7 /* EnemyBlue.atlas */; };
+		228924B62CF145210031FDB7 /* CharacterAwake.png in Resources */ = {isa = PBXBuildFile; fileRef = 2289243D2CF145210031FDB7 /* CharacterAwake.png */; };
+		228924B72CF145210031FDB7 /* Enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2289243E2CF145210031FDB7 /* Enemy.png */; };
+		228924B82CF145210031FDB7 /* EnemyLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 2289243F2CF145210031FDB7 /* EnemyLight.png */; };
+		228924B92CF145210031FDB7 /* CharacterLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924402CF145210031FDB7 /* CharacterLight.png */; };
+		228924BA2CF145210031FDB7 /* Character.png in Resources */ = {isa = PBXBuildFile; fileRef = 228924412CF145210031FDB7 /* Character.png */; };
+		228924BB2CF145210031FDB7 /* launica.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 228924432CF145210031FDB7 /* launica.ttf */; };
+		228924BC2CF145210031FDB7 /* CharacterSleeping.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 228924442CF145210031FDB7 /* CharacterSleeping.atlas */; };
+		228924C02CF2E6C20031FDB7 /* EnemyRed.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 228924BF2CF2E6C20031FDB7 /* EnemyRed.atlas */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		226A3E4B2CF0297B00831618 /* wingy-nights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wingy-nights.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226A3E632CF0297F00831618 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		226A3F542CF029EB00831618 /* SpriteAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteAppDelegate.m; sourceTree = "<group>"; };
+		226A3F552CF029EB00831618 /* ScoresScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoresScene.h; sourceTree = "<group>"; };
+		226A3F562CF029EB00831618 /* SpriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteViewController.h; sourceTree = "<group>"; };
+		226A3F572CF029EB00831618 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
+		226A3F582CF029EB00831618 /* SpriteAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteAppDelegate.h; sourceTree = "<group>"; };
+		226A3F592CF029EB00831618 /* ScoresScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoresScene.m; sourceTree = "<group>"; };
+		226A3F5A2CF029EB00831618 /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScene.m; sourceTree = "<group>"; };
+		226A3F5B2CF029EB00831618 /* SpriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteViewController.m; sourceTree = "<group>"; };
+		226A3F612CF029F400831618 /* WindEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WindEmitter.sks; sourceTree = "<group>"; };
+		226A3F652CF03F3B00831618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		226A3F912CF04C9A00831618 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		226A3F982CF05C7C00831618 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		228923B82CF145200031FDB7 /* EnemyOrange.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EnemyOrange.atlas; sourceTree = "<group>"; };
+		228923B92CF145200031FDB7 /* EnemyPurple.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EnemyPurple.atlas; sourceTree = "<group>"; };
+		228923BB2CF145200031FDB7 /* ButtonPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPlay.png; sourceTree = "<group>"; };
+		228923BC2CF145200031FDB7 /* ButtonHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonHome.png; sourceTree = "<group>"; };
+		228923BD2CF145200031FDB7 /* ButtonPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPause.png; sourceTree = "<group>"; };
+		228923BE2CF145200031FDB7 /* ButtonDeactivated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonDeactivated.png; sourceTree = "<group>"; };
+		228923BF2CF145200031FDB7 /* ButtonArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonArrowDown.png; sourceTree = "<group>"; };
+		228923C02CF145200031FDB7 /* ButtonGameCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonGameCenter.png; sourceTree = "<group>"; };
+		228923C12CF145200031FDB7 /* ButtonActivated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonActivated.png; sourceTree = "<group>"; };
+		228923C22CF145200031FDB7 /* ButtonArrowUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonArrowUp.png; sourceTree = "<group>"; };
+		228923C32CF145200031FDB7 /* ButtonReplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonReplay.png; sourceTree = "<group>"; };
+		228923C52CF145200031FDB7 /* BackgroundSpeedLines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundSpeedLines.png; sourceTree = "<group>"; };
+		228923C72CF145200031FDB7 /* LaunchImageDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImageDefault@2x.png"; sourceTree = "<group>"; };
+		228923C82CF145200031FDB7 /* LaunchImageDefault-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImageDefault-Landscape@2x.png"; sourceTree = "<group>"; };
+		228923C92CF145200031FDB7 /* LaunchImageDefault-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImageDefault-Landscape.png"; sourceTree = "<group>"; };
+		228923CA2CF145200031FDB7 /* LaunchImageDefault-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImageDefault-568h@2x.png"; sourceTree = "<group>"; };
+		228923CB2CF145210031FDB7 /* EnemyCounter.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EnemyCounter.atlas; sourceTree = "<group>"; };
+		2289240B2CF145210031FDB7 /* SoundEndHighZero.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundEndHighZero.m4a; sourceTree = "<group>"; };
+		2289240C2CF145210031FDB7 /* SoundEndHighFour.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundEndHighFour.m4a; sourceTree = "<group>"; };
+		2289240D2CF145210031FDB7 /* SoundEndHighTwo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundEndHighTwo.m4a; sourceTree = "<group>"; };
+		2289240E2CF145210031FDB7 /* SoundEndHighThree.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundEndHighThree.m4a; sourceTree = "<group>"; };
+		2289240F2CF145210031FDB7 /* SoundEndHighOne.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundEndHighOne.m4a; sourceTree = "<group>"; };
+		228924112CF145210031FDB7 /* SoundTeleportOne.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundTeleportOne.m4a; sourceTree = "<group>"; };
+		228924122CF145210031FDB7 /* SoundTeleportZero.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundTeleportZero.m4a; sourceTree = "<group>"; };
+		228924132CF145210031FDB7 /* SoundTeleportFour.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundTeleportFour.m4a; sourceTree = "<group>"; };
+		228924142CF145210031FDB7 /* SoundTeleportTwo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundTeleportTwo.m4a; sourceTree = "<group>"; };
+		228924152CF145210031FDB7 /* SoundTeleportThree.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundTeleportThree.m4a; sourceTree = "<group>"; };
+		228924172CF145210031FDB7 /* SoundBeginLowOne.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundBeginLowOne.m4a; sourceTree = "<group>"; };
+		228924182CF145210031FDB7 /* SoundBeginLowThree.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundBeginLowThree.m4a; sourceTree = "<group>"; };
+		228924192CF145210031FDB7 /* SoundBeginLowTwo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundBeginLowTwo.m4a; sourceTree = "<group>"; };
+		2289241A2CF145210031FDB7 /* SoundBeginLowFour.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundBeginLowFour.m4a; sourceTree = "<group>"; };
+		2289241B2CF145210031FDB7 /* SoundBeginLowZero.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundBeginLowZero.m4a; sourceTree = "<group>"; };
+		2289241D2CF145210031FDB7 /* SoundCollision.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SoundCollision.m4a; sourceTree = "<group>"; };
+		2289241F2CF145210031FDB7 /* BackgroundStarsOneiPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundStarsOneiPhone5.png; sourceTree = "<group>"; };
+		228924202CF145210031FDB7 /* BackgroundStarsThreeiPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundStarsThreeiPhone5.png; sourceTree = "<group>"; };
+		228924212CF145210031FDB7 /* BackgroundStarsTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundStarsTwo.png; sourceTree = "<group>"; };
+		228924222CF145210031FDB7 /* BackgroundStarsOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundStarsOne.png; sourceTree = "<group>"; };
+		228924232CF145210031FDB7 /* BackgroundStarsThree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundStarsThree.png; sourceTree = "<group>"; };
+		228924242CF145210031FDB7 /* BackgroundStarsTwoiPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundStarsTwoiPhone5.png; sourceTree = "<group>"; };
+		228924282CF145210031FDB7 /* wingynightsicon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wingynightsicon1024.png; sourceTree = "<group>"; };
+		228924292CF145210031FDB7 /* wingynightsicon29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wingynightsicon29pt.png; sourceTree = "<group>"; };
+		2289242A2CF145210031FDB7 /* wingynightsicon60pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wingynightsicon60pt.png; sourceTree = "<group>"; };
+		2289242B2CF145210031FDB7 /* wingynightsicon40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wingynightsicon40pt.png; sourceTree = "<group>"; };
+		2289242D2CF145210031FDB7 /* wingynightsiconiPad29pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wingynightsiconiPad29pt@2x.png"; sourceTree = "<group>"; };
+		2289242E2CF145210031FDB7 /* wingynightsiconiPad29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wingynightsiconiPad29pt.png; sourceTree = "<group>"; };
+		2289242F2CF145210031FDB7 /* wingynightsiconiPad76pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wingynightsiconiPad76pt@2x.png"; sourceTree = "<group>"; };
+		228924302CF145210031FDB7 /* wingynightsiconiPad76pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wingynightsiconiPad76pt.png; sourceTree = "<group>"; };
+		228924312CF145210031FDB7 /* wingynightsiconiPad40pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wingynightsiconiPad40pt@2x.png"; sourceTree = "<group>"; };
+		228924322CF145210031FDB7 /* wingynightsiconiPad40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wingynightsiconiPad40pt.png; sourceTree = "<group>"; };
+		228924342CF145210031FDB7 /* ParticleSoundEndHigh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ParticleSoundEndHigh.png; sourceTree = "<group>"; };
+		228924352CF145210031FDB7 /* ParticleSoundBeginLow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ParticleSoundBeginLow.png; sourceTree = "<group>"; };
+		228924362CF145210031FDB7 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
+		228924372CF145210031FDB7 /* EnemyCounterLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnemyCounterLight.png; sourceTree = "<group>"; };
+		228924382CF145210031FDB7 /* EnemyCounter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnemyCounter.png; sourceTree = "<group>"; };
+		228924392CF145210031FDB7 /* WindTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WindTexture.png; sourceTree = "<group>"; };
+		2289243A2CF145210031FDB7 /* EnemyGreen.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EnemyGreen.atlas; sourceTree = "<group>"; };
+		2289243B2CF145210031FDB7 /* EnemyBlue.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EnemyBlue.atlas; sourceTree = "<group>"; };
+		2289243D2CF145210031FDB7 /* CharacterAwake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharacterAwake.png; sourceTree = "<group>"; };
+		2289243E2CF145210031FDB7 /* Enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enemy.png; sourceTree = "<group>"; };
+		2289243F2CF145210031FDB7 /* EnemyLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnemyLight.png; sourceTree = "<group>"; };
+		228924402CF145210031FDB7 /* CharacterLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharacterLight.png; sourceTree = "<group>"; };
+		228924412CF145210031FDB7 /* Character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Character.png; sourceTree = "<group>"; };
+		228924432CF145210031FDB7 /* launica.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = launica.ttf; sourceTree = "<group>"; };
+		228924442CF145210031FDB7 /* CharacterSleeping.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = CharacterSleeping.atlas; sourceTree = "<group>"; };
+		228924BF2CF2E6C20031FDB7 /* EnemyRed.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = EnemyRed.atlas; path = "wingy-nights/Assets/EnemyRed.atlas"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		226A3E482CF0297B00831618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		226A3E422CF0297B00831618 = {
+			isa = PBXGroup;
+			children = (
+				226A3E4D2CF0297B00831618 /* wingy-nights */,
+				226A3E4C2CF0297B00831618 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		226A3E4C2CF0297B00831618 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				226A3E4B2CF0297B00831618 /* wingy-nights.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		226A3E4D2CF0297B00831618 /* wingy-nights */ = {
+			isa = PBXGroup;
+			children = (
+				228923B72CF145200031FDB7 /* Assets */,
+				226A3F602CF029F400831618 /* Effects */,
+				226A3F532CF029EB00831618 /* Controllers */,
+				226A3E632CF0297F00831618 /* main.m */,
+				226A3F542CF029EB00831618 /* SpriteAppDelegate.m */,
+				226A3F582CF029EB00831618 /* SpriteAppDelegate.h */,
+				226A3F652CF03F3B00831618 /* Assets.xcassets */,
+				226A3F912CF04C9A00831618 /* LaunchScreen.storyboard */,
+				226A3F982CF05C7C00831618 /* Main.storyboard */,
+			);
+			path = "wingy-nights";
+			sourceTree = "<group>";
+		};
+		226A3F532CF029EB00831618 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				226A3F552CF029EB00831618 /* ScoresScene.h */,
+				226A3F562CF029EB00831618 /* SpriteViewController.h */,
+				226A3F572CF029EB00831618 /* MainScene.h */,
+				226A3F592CF029EB00831618 /* ScoresScene.m */,
+				226A3F5A2CF029EB00831618 /* MainScene.m */,
+				226A3F5B2CF029EB00831618 /* SpriteViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		226A3F602CF029F400831618 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				226A3F612CF029F400831618 /* WindEmitter.sks */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		228923B72CF145200031FDB7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				228924BF2CF2E6C20031FDB7 /* EnemyRed.atlas */,
+				228923B82CF145200031FDB7 /* EnemyOrange.atlas */,
+				228923B92CF145200031FDB7 /* EnemyPurple.atlas */,
+				228923BA2CF145200031FDB7 /* Buttons */,
+				228923C42CF145200031FDB7 /* OtherBackgrounds */,
+				228923C62CF145200031FDB7 /* LaunchImage */,
+				228923CB2CF145210031FDB7 /* EnemyCounter.atlas */,
+				228924092CF145210031FDB7 /* Sounds */,
+				2289241E2CF145210031FDB7 /* BackgroundStarsiPhone5 */,
+				228924262CF145210031FDB7 /* AppIcon */,
+				228924332CF145210031FDB7 /* Symbols */,
+				2289243A2CF145210031FDB7 /* EnemyGreen.atlas */,
+				2289243B2CF145210031FDB7 /* EnemyBlue.atlas */,
+				2289243C2CF145210031FDB7 /* Characters */,
+				228924422CF145210031FDB7 /* Fonts */,
+				228924442CF145210031FDB7 /* CharacterSleeping.atlas */,
+			);
+			name = Assets;
+			path = "../../Assets/Wingy Nights Assets/Assets";
+			sourceTree = "<group>";
+		};
+		228923BA2CF145200031FDB7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				228923BB2CF145200031FDB7 /* ButtonPlay.png */,
+				228923BC2CF145200031FDB7 /* ButtonHome.png */,
+				228923BD2CF145200031FDB7 /* ButtonPause.png */,
+				228923BE2CF145200031FDB7 /* ButtonDeactivated.png */,
+				228923BF2CF145200031FDB7 /* ButtonArrowDown.png */,
+				228923C02CF145200031FDB7 /* ButtonGameCenter.png */,
+				228923C12CF145200031FDB7 /* ButtonActivated.png */,
+				228923C22CF145200031FDB7 /* ButtonArrowUp.png */,
+				228923C32CF145200031FDB7 /* ButtonReplay.png */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		228923C42CF145200031FDB7 /* OtherBackgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				228923C52CF145200031FDB7 /* BackgroundSpeedLines.png */,
+			);
+			path = OtherBackgrounds;
+			sourceTree = "<group>";
+		};
+		228923C62CF145200031FDB7 /* LaunchImage */ = {
+			isa = PBXGroup;
+			children = (
+				228923C72CF145200031FDB7 /* LaunchImageDefault@2x.png */,
+				228923C82CF145200031FDB7 /* LaunchImageDefault-Landscape@2x.png */,
+				228923C92CF145200031FDB7 /* LaunchImageDefault-Landscape.png */,
+				228923CA2CF145200031FDB7 /* LaunchImageDefault-568h@2x.png */,
+			);
+			path = LaunchImage;
+			sourceTree = "<group>";
+		};
+		228924092CF145210031FDB7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2289240A2CF145210031FDB7 /* SoundsEndHigh */,
+				228924102CF145210031FDB7 /* SoundsTeleport */,
+				228924162CF145210031FDB7 /* SoundsBeginLow */,
+				2289241C2CF145210031FDB7 /* OtherSounds */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		2289240A2CF145210031FDB7 /* SoundsEndHigh */ = {
+			isa = PBXGroup;
+			children = (
+				2289240B2CF145210031FDB7 /* SoundEndHighZero.m4a */,
+				2289240C2CF145210031FDB7 /* SoundEndHighFour.m4a */,
+				2289240D2CF145210031FDB7 /* SoundEndHighTwo.m4a */,
+				2289240E2CF145210031FDB7 /* SoundEndHighThree.m4a */,
+				2289240F2CF145210031FDB7 /* SoundEndHighOne.m4a */,
+			);
+			path = SoundsEndHigh;
+			sourceTree = "<group>";
+		};
+		228924102CF145210031FDB7 /* SoundsTeleport */ = {
+			isa = PBXGroup;
+			children = (
+				228924112CF145210031FDB7 /* SoundTeleportOne.m4a */,
+				228924122CF145210031FDB7 /* SoundTeleportZero.m4a */,
+				228924132CF145210031FDB7 /* SoundTeleportFour.m4a */,
+				228924142CF145210031FDB7 /* SoundTeleportTwo.m4a */,
+				228924152CF145210031FDB7 /* SoundTeleportThree.m4a */,
+			);
+			path = SoundsTeleport;
+			sourceTree = "<group>";
+		};
+		228924162CF145210031FDB7 /* SoundsBeginLow */ = {
+			isa = PBXGroup;
+			children = (
+				228924172CF145210031FDB7 /* SoundBeginLowOne.m4a */,
+				228924182CF145210031FDB7 /* SoundBeginLowThree.m4a */,
+				228924192CF145210031FDB7 /* SoundBeginLowTwo.m4a */,
+				2289241A2CF145210031FDB7 /* SoundBeginLowFour.m4a */,
+				2289241B2CF145210031FDB7 /* SoundBeginLowZero.m4a */,
+			);
+			path = SoundsBeginLow;
+			sourceTree = "<group>";
+		};
+		2289241C2CF145210031FDB7 /* OtherSounds */ = {
+			isa = PBXGroup;
+			children = (
+				2289241D2CF145210031FDB7 /* SoundCollision.m4a */,
+			);
+			path = OtherSounds;
+			sourceTree = "<group>";
+		};
+		2289241E2CF145210031FDB7 /* BackgroundStarsiPhone5 */ = {
+			isa = PBXGroup;
+			children = (
+				2289241F2CF145210031FDB7 /* BackgroundStarsOneiPhone5.png */,
+				228924202CF145210031FDB7 /* BackgroundStarsThreeiPhone5.png */,
+				228924212CF145210031FDB7 /* BackgroundStarsTwo.png */,
+				228924222CF145210031FDB7 /* BackgroundStarsOne.png */,
+				228924232CF145210031FDB7 /* BackgroundStarsThree.png */,
+				228924242CF145210031FDB7 /* BackgroundStarsTwoiPhone5.png */,
+			);
+			path = BackgroundStarsiPhone5;
+			sourceTree = "<group>";
+		};
+		228924262CF145210031FDB7 /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				228924272CF145210031FDB7 /* iPhone */,
+				2289242C2CF145210031FDB7 /* iPad */,
+			);
+			path = AppIcon;
+			sourceTree = "<group>";
+		};
+		228924272CF145210031FDB7 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				228924282CF145210031FDB7 /* wingynightsicon1024.png */,
+				228924292CF145210031FDB7 /* wingynightsicon29pt.png */,
+				2289242A2CF145210031FDB7 /* wingynightsicon60pt.png */,
+				2289242B2CF145210031FDB7 /* wingynightsicon40pt.png */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		2289242C2CF145210031FDB7 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				2289242D2CF145210031FDB7 /* wingynightsiconiPad29pt@2x.png */,
+				2289242E2CF145210031FDB7 /* wingynightsiconiPad29pt.png */,
+				2289242F2CF145210031FDB7 /* wingynightsiconiPad76pt@2x.png */,
+				228924302CF145210031FDB7 /* wingynightsiconiPad76pt.png */,
+				228924312CF145210031FDB7 /* wingynightsiconiPad40pt@2x.png */,
+				228924322CF145210031FDB7 /* wingynightsiconiPad40pt.png */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		228924332CF145210031FDB7 /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				228924342CF145210031FDB7 /* ParticleSoundEndHigh.png */,
+				228924352CF145210031FDB7 /* ParticleSoundBeginLow.png */,
+				228924362CF145210031FDB7 /* Title.png */,
+				228924372CF145210031FDB7 /* EnemyCounterLight.png */,
+				228924382CF145210031FDB7 /* EnemyCounter.png */,
+				228924392CF145210031FDB7 /* WindTexture.png */,
+			);
+			path = Symbols;
+			sourceTree = "<group>";
+		};
+		2289243C2CF145210031FDB7 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				2289243D2CF145210031FDB7 /* CharacterAwake.png */,
+				2289243E2CF145210031FDB7 /* Enemy.png */,
+				2289243F2CF145210031FDB7 /* EnemyLight.png */,
+				228924402CF145210031FDB7 /* CharacterLight.png */,
+				228924412CF145210031FDB7 /* Character.png */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		228924422CF145210031FDB7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				228924432CF145210031FDB7 /* launica.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		226A3E4A2CF0297B00831618 /* wingy-nights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226A3E672CF0297F00831618 /* Build configuration list for PBXNativeTarget "wingy-nights" */;
+			buildPhases = (
+				226A3E472CF0297B00831618 /* Sources */,
+				226A3E482CF0297B00831618 /* Frameworks */,
+				226A3E492CF0297B00831618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wingy-nights";
+			productName = "wingy-nights";
+			productReference = 226A3E4B2CF0297B00831618 /* wingy-nights.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		226A3E432CF0297B00831618 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					226A3E4A2CF0297B00831618 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 226A3E462CF0297B00831618 /* Build configuration list for PBXProject "wingy-nights" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 226A3E422CF0297B00831618;
+			productRefGroup = 226A3E4C2CF0297B00831618 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				226A3E4A2CF0297B00831618 /* wingy-nights */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		226A3E492CF0297B00831618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228924472CF145210031FDB7 /* ButtonPlay.png in Resources */,
+				228924962CF145210031FDB7 /* SoundTeleportThree.m4a in Resources */,
+				228924452CF145210031FDB7 /* EnemyOrange.atlas in Resources */,
+				2289249C2CF145210031FDB7 /* SoundCollision.m4a in Resources */,
+				228924932CF145210031FDB7 /* SoundTeleportZero.m4a in Resources */,
+				228924B62CF145210031FDB7 /* CharacterAwake.png in Resources */,
+				228924BC2CF145210031FDB7 /* CharacterSleeping.atlas in Resources */,
+				228924A12CF145210031FDB7 /* BackgroundStarsThree.png in Resources */,
+				228924BB2CF145210031FDB7 /* launica.ttf in Resources */,
+				2289248E2CF145210031FDB7 /* SoundEndHighFour.m4a in Resources */,
+				2289249D2CF145210031FDB7 /* BackgroundStarsOneiPhone5.png in Resources */,
+				228924AB2CF145210031FDB7 /* wingynightsiconiPad76pt.png in Resources */,
+				2289244D2CF145210031FDB7 /* ButtonActivated.png in Resources */,
+				228924B32CF145210031FDB7 /* WindTexture.png in Resources */,
+				228924A52CF145210031FDB7 /* wingynightsicon29pt.png in Resources */,
+				228924B42CF145210031FDB7 /* EnemyGreen.atlas in Resources */,
+				228924A82CF145210031FDB7 /* wingynightsiconiPad29pt@2x.png in Resources */,
+				2289244F2CF145210031FDB7 /* ButtonReplay.png in Resources */,
+				228924942CF145210031FDB7 /* SoundTeleportFour.m4a in Resources */,
+				228924B52CF145210031FDB7 /* EnemyBlue.atlas in Resources */,
+				228924B72CF145210031FDB7 /* Enemy.png in Resources */,
+				226A3F622CF029F400831618 /* WindEmitter.sks in Resources */,
+				228924A92CF145210031FDB7 /* wingynightsiconiPad29pt.png in Resources */,
+				228924AC2CF145210031FDB7 /* wingynightsiconiPad40pt@2x.png in Resources */,
+				228924AF2CF145210031FDB7 /* ParticleSoundBeginLow.png in Resources */,
+				2289249F2CF145210031FDB7 /* BackgroundStarsTwo.png in Resources */,
+				2289249E2CF145210031FDB7 /* BackgroundStarsThreeiPhone5.png in Resources */,
+				228924492CF145210031FDB7 /* ButtonPause.png in Resources */,
+				228924542CF145210031FDB7 /* LaunchImageDefault-568h@2x.png in Resources */,
+				228924A62CF145210031FDB7 /* wingynightsicon60pt.png in Resources */,
+				2289244A2CF145210031FDB7 /* ButtonDeactivated.png in Resources */,
+				228924C02CF2E6C20031FDB7 /* EnemyRed.atlas in Resources */,
+				228924502CF145210031FDB7 /* BackgroundSpeedLines.png in Resources */,
+				2289248F2CF145210031FDB7 /* SoundEndHighTwo.m4a in Resources */,
+				228924A72CF145210031FDB7 /* wingynightsicon40pt.png in Resources */,
+				2289249B2CF145210031FDB7 /* SoundBeginLowZero.m4a in Resources */,
+				2289249A2CF145210031FDB7 /* SoundBeginLowFour.m4a in Resources */,
+				228924A42CF145210031FDB7 /* wingynightsicon1024.png in Resources */,
+				228924B82CF145210031FDB7 /* EnemyLight.png in Resources */,
+				2289244E2CF145210031FDB7 /* ButtonArrowUp.png in Resources */,
+				228924552CF145210031FDB7 /* EnemyCounter.atlas in Resources */,
+				228924B12CF145210031FDB7 /* EnemyCounterLight.png in Resources */,
+				228924992CF145210031FDB7 /* SoundBeginLowTwo.m4a in Resources */,
+				228924A02CF145210031FDB7 /* BackgroundStarsOne.png in Resources */,
+				2289248D2CF145210031FDB7 /* SoundEndHighZero.m4a in Resources */,
+				228924462CF145210031FDB7 /* EnemyPurple.atlas in Resources */,
+				228924A22CF145210031FDB7 /* BackgroundStarsTwoiPhone5.png in Resources */,
+				228924BA2CF145210031FDB7 /* Character.png in Resources */,
+				228924922CF145210031FDB7 /* SoundTeleportOne.m4a in Resources */,
+				226A3F662CF03F3B00831618 /* Assets.xcassets in Resources */,
+				228924912CF145210031FDB7 /* SoundEndHighOne.m4a in Resources */,
+				228924522CF145210031FDB7 /* LaunchImageDefault-Landscape@2x.png in Resources */,
+				228924AE2CF145210031FDB7 /* ParticleSoundEndHigh.png in Resources */,
+				228924AD2CF145210031FDB7 /* wingynightsiconiPad40pt.png in Resources */,
+				228924AA2CF145210031FDB7 /* wingynightsiconiPad76pt@2x.png in Resources */,
+				226A3F922CF04C9A00831618 /* LaunchScreen.storyboard in Resources */,
+				228924972CF145210031FDB7 /* SoundBeginLowOne.m4a in Resources */,
+				228924482CF145210031FDB7 /* ButtonHome.png in Resources */,
+				228924512CF145210031FDB7 /* LaunchImageDefault@2x.png in Resources */,
+				2289244B2CF145210031FDB7 /* ButtonArrowDown.png in Resources */,
+				2289244C2CF145210031FDB7 /* ButtonGameCenter.png in Resources */,
+				228924952CF145210031FDB7 /* SoundTeleportTwo.m4a in Resources */,
+				228924B92CF145210031FDB7 /* CharacterLight.png in Resources */,
+				228924532CF145210031FDB7 /* LaunchImageDefault-Landscape.png in Resources */,
+				228924902CF145210031FDB7 /* SoundEndHighThree.m4a in Resources */,
+				226A3F992CF05C7C00831618 /* Main.storyboard in Resources */,
+				228924982CF145210031FDB7 /* SoundBeginLowThree.m4a in Resources */,
+				228924B02CF145210031FDB7 /* Title.png in Resources */,
+				228924B22CF145210031FDB7 /* EnemyCounter.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		226A3E472CF0297B00831618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226A3F5D2CF029EB00831618 /* ScoresScene.m in Sources */,
+				226A3F5E2CF029EB00831618 /* MainScene.m in Sources */,
+				226A3E642CF0297F00831618 /* main.m in Sources */,
+				226A3F5C2CF029EB00831618 /* SpriteAppDelegate.m in Sources */,
+				226A3F5F2CF029EB00831618 /* SpriteViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		226A3E652CF0297F00831618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		226A3E662CF0297F00831618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		226A3E682CF0297F00831618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34JJ25HPYU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "wingy-nights/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Wingy Nights";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "armv7 gamekit";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertopineda.wingy-nights";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		226A3E692CF0297F00831618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34JJ25HPYU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "wingy-nights/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Wingy Nights";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "armv7 gamekit";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertopineda.wingy-nights";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		226A3E462CF0297B00831618 /* Build configuration list for PBXProject "wingy-nights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226A3E652CF0297F00831618 /* Debug */,
+				226A3E662CF0297F00831618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226A3E672CF0297F00831618 /* Build configuration list for PBXNativeTarget "wingy-nights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226A3E682CF0297F00831618 /* Debug */,
+				226A3E692CF0297F00831618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 226A3E432CF0297B00831618 /* Project object */;
+}
